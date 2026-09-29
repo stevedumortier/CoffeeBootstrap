@@ -284,94 +284,88 @@
 
       <section
         id="about"
-        class="bg-espresso text-cream py-5 py-lg-6"
+        class="bg-espresso text-body py-5 py-lg-6"
         data-bs-theme="dark"
       >
         <div class="container">
-          <div class="row align-items-center g-5">
+          <div class="row align-items-center g-4 g-lg-5">
             <div class="col-lg-6">
               <div class="row g-3">
                 <div class="col-7">
                   <img
                     src="img/about-barista.jpg"
-                    class="img-fluid rounded-4 w-100 h-100 object-fit-cover about-img-main"
-                    alt="A barista pouring hot water over a Chemex filter"
+                    class="img-fluid h-100 rounded-4 object-fit-cover"
+                    alt="A barista making pour-over coffee"
                     loading="lazy"
                   />
                 </div>
-                <div class="col-5">
-                  <div class="row g-3 h-100">
-                    <div class="col-12">
-                      <img
-                        src="img/about-beans.jpg"
-                        class="img-fluid rounded-4 w-100 object-fit-cover about-img-sub"
-                        alt="Ground coffee and roasted beans in portafilters"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="col-12">
-                      <div
-                        class="card border-0 rounded-4 bg-caramel text-white h-100"
-                      >
-                        <div
-                          class="card-body text-center d-flex flex-column justify-content-center py-4"
-                        >
-                          <p class="display-6 fw-bold mb-1">10+</p>
-                          <p class="small mb-0">years of roasting</p>
-                        </div>
-                      </div>
-                    </div>
+                <div class="col-5 d-flex flex-column gap-3">
+                  <img
+                    src="img/about-beans.jpg"
+                    class="img-fluid rounded-4"
+                    alt="Portafilters with coffee beans and ground coffee"
+                    loading="lazy"
+                  />
+                  <div
+                    class="bg-caramel text-white text-center rounded-4 p-4 flex-grow-1 d-flex flex-column justify-content-center"
+                  >
+                    <p class="display-6 fw-bold mb-0">10+</p>
+                    <p class="small mb-0">years of roasting</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+
+            <div class="col-lg-5 offset-lg-1">
               <p class="eyebrow">Our story</p>
               <h2 class="display-5 fw-bold mb-4">
                 Roasted with patience, served with love
               </h2>
-              <p class="text-cream-secondary mb-4">
+              <p class="text-body-secondary mb-4">
                 Roast &amp; Co. started as a tiny roaster in a garage. Today we
                 are a neighbourhood coffee bar, but the idea is still the same:
                 great beans, honest prices and time for a chat.
               </p>
-              <ul class="list-unstyled d-flex flex-column gap-3 mb-4">
+              <ul class="list-unstyled d-grid gap-3 mb-4">
                 <li class="d-flex gap-3">
-                  <span class="icon-circle icon-circle-dark flex-shrink-0"
-                    ><i class="bi bi-globe-europe-africa" aria-hidden="true"></i
-                  ></span>
+                  <i
+                    class="bi bi-globe-europe-africa fs-4 text-caramel"
+                    aria-hidden="true"
+                  ></i>
                   <div>
-                    <p class="fw-bold mb-0">Direct trade</p>
-                    <p class="small text-cream-secondary mb-0">
+                    <h3 class="h6 fw-bold mb-1">Direct trade</h3>
+                    <p class="small text-body-secondary mb-0">
                       We buy straight from farmers and pay above fair-trade
                       prices.
                     </p>
                   </div>
                 </li>
                 <li class="d-flex gap-3">
-                  <span class="icon-circle icon-circle-dark flex-shrink-0"
-                    ><i class="bi bi-fire" aria-hidden="true"></i
-                  ></span>
+                  <i
+                    class="bi bi-fire fs-4 text-caramel"
+                    aria-hidden="true"
+                  ></i>
                   <div>
-                    <p class="fw-bold mb-0">Roasted weekly</p>
-                    <p class="small text-cream-secondary mb-0">
+                    <h3 class="h6 fw-bold mb-1">Roasted weekly</h3>
+                    <p class="small text-body-secondary mb-0">
                       Small batches, so your coffee is always fresh.
                     </p>
                   </div>
                 </li>
                 <li class="d-flex gap-3">
-                  <span class="icon-circle icon-circle-dark flex-shrink-0"
-                    ><i class="bi bi-recycle" aria-hidden="true"></i
-                  ></span>
+                  <i
+                    class="bi bi-recycle fs-4 text-caramel"
+                    aria-hidden="true"
+                  ></i>
                   <div>
-                    <p class="fw-bold mb-0">Zero-waste bar</p>
-                    <p class="small text-cream-secondary mb-0">
+                    <h3 class="h6 fw-bold mb-1">Zero-waste bar</h3>
+                    <p class="small text-body-secondary mb-0">
                       Bring your own cup and get €0,30 off.
                     </p>
                   </div>
                 </li>
               </ul>
-              <a class="btn btn-outline-light px-4" href="#menu"
+              <a class="btn btn-outline-light btn-lg" href="#menu"
                 >Discover the menu</a
               >
             </div>
@@ -379,90 +373,385 @@
         </div>
       </section>
 
-      <section id="story" class="hero bg-cream py-5 py-lg-6">
+      <section id="menu" class="bg-cream py-5 py-lg-6">
         <div class="container">
-          <p class="eyebrow text-center">THE MENU</p>
-          <h2 class="display-5 fw-bold mb-0 text-center">
-            Something for every moment
-          </h2>
-          <p class="text-body-secondary mb-0 text-center">
-            From a quick espresso to a long brunch: pick a category and find
-            your new favorite.
-          </p>
-        </div>
-        <div class="">
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <!--kan met text-center, mx-auto met col, flexbox d-flex met align-items -->
+          <div class="text-center mb-5">
+            <p class="eyebrow">The menu</p>
+            <h2 class="display-5 fw-bold">Something for every moment</h2>
+            <p class="text-body-secondary col-lg-6 mx-auto mb-0">
+              From a quick espresso to a long brunch: pick a category and find
+              your new favourite.
+            </p>
+          </div>
+
+          <ul
+            class="nav nav-pills menu-tabs justify-content-center gap-2 mb-5"
+            id="menuTab"
+            role="tablist"
+          >
             <li class="nav-item" role="presentation">
               <button
-                class="nav-link active"
-                id="pills-home-tab"
+                class="nav-link active rounded-pill px-4"
+                id="coffee-tab"
                 data-bs-toggle="pill"
-                data-bs-target="#pills-home"
+                data-bs-target="#coffee-pane"
                 type="button"
                 role="tab"
-                aria-controls="pills-home"
+                aria-controls="coffee-pane"
                 aria-selected="true"
               >
-                <i class="bi bi-cup-hot"></i>
-                <p>Coffee</p>
+                <i class="bi bi-cup-hot me-1" aria-hidden="true"></i> Coffee
               </button>
             </li>
             <li class="nav-item" role="presentation">
               <button
-                class="nav-link text-bg-light"
-                id="pills-profile-tab"
+                class="nav-link rounded-pill px-4"
+                id="tea-tab"
                 data-bs-toggle="pill"
-                data-bs-target="#pills-profile"
+                data-bs-target="#tea-pane"
                 type="button"
                 role="tab"
-                aria-controls="pills-profile"
+                aria-controls="tea-pane"
                 aria-selected="false"
               >
-                Tea & more
+                <i class="bi bi-cup-straw me-1" aria-hidden="true"></i> Tea
+                &amp; more
               </button>
             </li>
             <li class="nav-item" role="presentation">
               <button
-                class="nav-link"
-                id="pills-contact-tab"
+                class="nav-link rounded-pill px-4"
+                id="bakery-tab"
                 data-bs-toggle="pill"
-                data-bs-target="#pills-contact"
+                data-bs-target="#bakery-pane"
                 type="button"
                 role="tab"
-                aria-controls="pills-contact"
+                aria-controls="bakery-pane"
                 aria-selected="false"
               >
-                Bakery
+                <i class="bi bi-basket me-1" aria-hidden="true"></i> Bakery
               </button>
             </li>
           </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="pills-home"
-              role="tabpanel"
-              aria-labelledby="pills-home-tab"
-              tabindex="0"
-            >
-              ...
+
+          <div class="row align-items-center g-4 g-lg-5">
+            <div class="col-lg-5 d-none d-lg-block">
+              <img
+                src="img/menu.jpg"
+                class="img-fluid rounded-5 shadow"
+                alt="Different coffees on a round wooden table, seen from above"
+                loading="lazy"
+              />
             </div>
-            <div
-              class="tab-pane fade"
-              id="pills-profile"
-              role="tabpanel"
-              aria-labelledby="pills-profile-tab"
-              tabindex="0"
-            >
-              ...
+
+            <div class="col-lg-7">
+              <div class="tab-content" id="menuTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="coffee-pane"
+                  role="tabpanel"
+                  aria-labelledby="coffee-tab"
+                  tabindex="0"
+                >
+                  <ul class="list-group list-group-flush">
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">Espresso</h3>
+                        <p class="small text-body-secondary mb-0">
+                          A single shot of our house blend
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€2,80</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">Americano</h3>
+                        <p class="small text-body-secondary mb-0">
+                          Espresso with hot water, long and smooth
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€3,20</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">
+                          Cappuccino
+                          <span
+                            class="badge rounded-pill text-bg-dark align-middle ms-1"
+                            >Popular</span
+                          >
+                        </h3>
+                        <p class="small text-body-secondary mb-0">
+                          Double shot, steamed milk and a thick layer of foam
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€3,90</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">Flat White</h3>
+                        <p class="small text-body-secondary mb-0">
+                          Ristretto with velvety micro-foam
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€4,10</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">
+                          Cold Brew
+                          <span
+                            class="badge rounded-pill bg-caramel text-white align-middle ms-1"
+                            >Seasonal</span
+                          >
+                        </h3>
+                        <p class="small text-body-secondary mb-0">
+                          Steeped for 18 hours, served over ice
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€4,20</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="tea-pane"
+                  role="tabpanel"
+                  aria-labelledby="tea-tab"
+                  tabindex="0"
+                >
+                  <ul class="list-group list-group-flush">
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">Chai Latte</h3>
+                        <p class="small text-body-secondary mb-0">
+                          Spiced black tea with steamed milk
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€4,20</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">
+                          Matcha Latte
+                          <span
+                            class="badge rounded-pill text-bg-success align-middle ms-1"
+                            >Vegan</span
+                          >
+                        </h3>
+                        <p class="small text-body-secondary mb-0">
+                          Ceremonial matcha with oat milk
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€4,50</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">Earl Grey</h3>
+                        <p class="small text-body-secondary mb-0">
+                          Loose-leaf tea with bergamot
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€3,00</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">Hot Chocolate</h3>
+                        <p class="small text-body-secondary mb-0">
+                          Belgian dark chocolate, whipped cream on request
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€3,80</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">Fresh Orange Juice</h3>
+                        <p class="small text-body-secondary mb-0">
+                          Squeezed to order
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€4,00</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="bakery-pane"
+                  role="tabpanel"
+                  aria-labelledby="bakery-tab"
+                  tabindex="0"
+                >
+                  <ul class="list-group list-group-flush">
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">Butter Croissant</h3>
+                        <p class="small text-body-secondary mb-0">
+                          Baked fresh every morning
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€2,60</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">
+                          Cinnamon Roll
+                          <span
+                            class="badge rounded-pill text-bg-dark align-middle ms-1"
+                            >Bestseller</span
+                          >
+                        </h3>
+                        <p class="small text-body-secondary mb-0">
+                          Soft, sticky and still warm
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€3,40</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">
+                          Banana Bread
+                          <span
+                            class="badge rounded-pill text-bg-success align-middle ms-1"
+                            >Vegan</span
+                          >
+                        </h3>
+                        <p class="small text-body-secondary mb-0">
+                          With walnuts and a hint of cinnamon
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€3,20</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">Carrot Cake</h3>
+                        <p class="small text-body-secondary mb-0">
+                          With cream cheese frosting
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€4,20</span>
+                    </li>
+                    <li
+                      class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3"
+                    >
+                      <div>
+                        <h3 class="h5 mb-1">Avocado Toast</h3>
+                        <p class="small text-body-secondary mb-0">
+                          Sourdough, avocado, feta and chili flakes
+                        </p>
+                      </div>
+                      <span class="fw-bold text-nowrap">€8,50</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="pills-contact"
-              role="tabpanel"
-              aria-labelledby="pills-contact-tab"
-              tabindex="0"
-            >
-              ...
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="">
+        <div class="container py-5 py-lg-6">
+          <div class="text-center">
+            <p class="eyebrow">Reviews</p>
+            <h2 class="display-5 fw-bold mb-0">What our guests say</h2>
+          </div>
+          <div class="row row-cols-lg-3 py-5">
+            <div class="col d-flex">
+              <div class="card">
+                <div class="card-body">
+                  <div>
+                    <h5 class="card-title">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </h5>
+                    <p class="card-text mb-5">
+                      "The best flat white in town, and the staff remembers my
+                      name. My mornings start here."
+                    </p>
+                  </div>
+                  <div class="row d-flex align-items-center">
+                    <div class="col-2">
+                      <span class="icon-circle d-flex">
+                        <p class="fw-bolder text-end">SV</p>
+                      </span>
+                    </div>
+                    <div class="col-10">
+                      <p class="fw-bold mb-0">Sofie V.</p>
+                      <p class="mb-0">Regular since 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-espresso">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </h5>
+                  <p class="card-text text-white">
+                    "Great place to study: fast Wi-Fi plenty of plugs and a
+                    cinnamon roll that is simply unbeatable."
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                  </h5>
+                  <p class="card-text">
+                    "We ordered their beans for our office. Friendly advice and
+                    the coffee tastes as good as in the bar."
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

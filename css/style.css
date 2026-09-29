@@ -79,6 +79,10 @@ h6,
   color: var(--roast-accent) !important;
 }
 
+.text-foam {
+  color: var(--roast-foam) !important;
+}
+
 /* Navbar in espresso-bruin. .navbar.navbar-roast is sterker dan Bootstrap's eigen regel */
 .navbar.navbar-roast {
   --bs-navbar-color: rgba(255, 255, 255, 0.75);
@@ -169,10 +173,10 @@ h6,
 }
 
 /* ==========================================================
-   Stap 4 – Over ons
+   Stap 4 – Over Roast & Co.
    ========================================================== */
 
-/* Donkere sectie-achtergrond, herbruikbaar zoals .bg-cream */
+/* Extra achtergrondkleuren */
 .bg-espresso {
   background-color: var(--roast-espresso) !important;
 }
@@ -181,35 +185,27 @@ h6,
   background-color: var(--roast-caramel-dark) !important;
 }
 
-.text-cream {
-  color: var(--roast-foam) !important;
+/* Warmere tekstkleuren in elk blok met data-bs-theme="dark" */
+[data-bs-theme="dark"] {
+  --bs-body-color: #efe6da;
+  --bs-body-color-rgb: 239, 230, 218;
+  --bs-secondary-color: rgba(239, 230, 218, 0.7);
 }
 
-.text-cream-secondary {
-  color: rgba(245, 237, 225, 0.75) !important;
+/* ==========================================================
+   Stap 5 – Menukaart
+   ========================================================== */
+
+/* Tabknoppen in huisstijl via de CSS-variabelen van .nav en .nav-pills */
+.menu-tabs {
+  --bs-nav-link-color: var(--roast-espresso);
+  --bs-nav-link-hover-color: var(--roast-caramel-dark);
+  --bs-nav-pills-link-active-color: #fff;
+  --bs-nav-pills-link-active-bg: var(--roast-espresso);
 }
 
-/* Icoon-cirkel, maar dan de variant voor op een donkere achtergrond */
-.icon-circle-dark {
-  background-color: rgba(245, 237, 225, 0.1);
-  color: var(--roast-accent);
-}
-
-/* Grote en kleine foto naast elkaar op gelijke hoogte houden */
-.about-img-main {
-  min-height: 320px;
-}
-
-.about-img-sub {
-  height: 140px;
-}
-
-@media (min-width: 992px) {
-  .about-img-main {
-    min-height: 440px;
-  }
-
-  .about-img-sub {
-    height: 190px;
-  }
+.menu-tabs .nav-link {
+  border: 1px solid var(--bs-border-color);
+  background-color: #fff;
+  font-weight: 600;
 }
