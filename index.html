@@ -30,6 +30,7 @@
     />
     <!-- Eigen stijl: altijd NA Bootstrap laden -->
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -283,6 +284,8 @@
       </section>
 
       <section
+        data-aos="zoom-out-up"
+        data-duration="3000"
         id="about"
         class="bg-espresso text-body py-5 py-lg-6"
         data-bs-theme="dark"
@@ -375,7 +378,6 @@
 
       <section id="menu" class="bg-cream py-5 py-lg-6">
         <div class="container">
-          <!--kan met text-center, mx-auto met col, flexbox d-flex met align-items -->
           <div class="text-center mb-5">
             <p class="eyebrow">The menu</p>
             <h2 class="display-5 fw-bold">Something for every moment</h2>
@@ -680,81 +682,262 @@
         </div>
       </section>
 
-      <section id="reviews" class="">
-        <div class="container py-5 py-lg-6">
-          <div class="text-center">
+      <section id="reviews" class="py-5 py-lg-6">
+        <div class="container">
+          <div class="text-center mb-5">
             <p class="eyebrow">Reviews</p>
-            <h2 class="display-5 fw-bold mb-0">What our guests say</h2>
+            <h2 class="display-5 fw-bold">What our guests say</h2>
           </div>
-          <div class="row row-cols-lg-3 py-5">
-            <div class="col d-flex">
-              <div class="card">
-                <div class="card-body">
-                  <div>
-                    <h5 class="card-title">
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                    </h5>
-                    <p class="card-text mb-5">
-                      "The best flat white in town, and the staff remembers my
-                      name. My mornings start here."
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" data-aos="fade-left">
+              <figure class="card h-100 border-0 shadow-sm p-4 mb-0">
+                <div class="text-warning mb-3" aria-label="5 out of 5 stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <blockquote class="blockquote fs-6 mb-4">
+                  <p>
+                    “The best flat white in town, and the staff remembers my
+                    name. My mornings start here.”
+                  </p>
+                </blockquote>
+                <figcaption class="d-flex align-items-center gap-3 mt-auto">
+                  <span class="avatar rounded-circle">SV</span>
+                  <span>
+                    <strong class="d-block">Sofie V.</strong>
+                    <span class="small text-body-secondary"
+                      >Regular since 2019</span
+                    >
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col">
+              <figure
+                class="card h-100 border-0 shadow p-4 mb-0 bg-espresso"
+                data-bs-theme="dark"
+              >
+                <div class="text-warning mb-3" aria-label="5 out of 5 stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <blockquote class="blockquote fs-6 mb-4">
+                  <p>
+                    “Great place to study: fast Wi-Fi, plenty of plugs and a
+                    cinnamon roll that is simply unbeatable.”
+                  </p>
+                </blockquote>
+                <figcaption class="d-flex align-items-center gap-3 mt-auto">
+                  <span class="avatar rounded-circle">JM</span>
+                  <span>
+                    <strong class="d-block">Jonas M.</strong>
+                    <span class="small text-body-secondary">Student</span>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col" data-aos="fade-left">
+              <figure class="card h-100 border-0 shadow-sm p-4 mb-0">
+                <div class="text-warning mb-3" aria-label="4 out of 5 stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star"></i>
+                </div>
+                <blockquote class="blockquote fs-6 mb-4">
+                  <p>
+                    “We ordered their beans for our office. Friendly advice and
+                    the coffee tastes as good as in the bar.”
+                  </p>
+                </blockquote>
+                <figcaption class="d-flex align-items-center gap-3 mt-auto">
+                  <span class="avatar rounded-circle">LD</span>
+                  <span>
+                    <strong class="d-block">Lina D.</strong>
+                    <span class="small text-body-secondary"
+                      >Office manager</span
+                    >
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p class="text-center text-body-secondary small mt-5 mb-0">
+            <i class="bi bi-google me-1" aria-hidden="true"></i> Rated
+            <strong class="text-body">4.9 / 5</strong> based on 1,200+ reviews
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="visit"
+        class="cta text-white text-center py-5 py-lg-6"
+        data-bs-theme="dark"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9 col-xl-8">
+              <p class="eyebrow">Come say hi</p>
+              <h2 class="display-4 fw-bold mb-3">Visit our coffee bar</h2>
+              <p class="lead opacity-75 mb-4">
+                Grab a window seat, bring a friend or your laptop. Our baristas
+                are ready for you.
+              </p>
+              <div
+                class="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-5"
+              >
+                <a
+                  class="btn btn-roast btn-lg px-4"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Gent"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="bi bi-map me-1" aria-hidden="true"></i> Get
+                  directions
+                </a>
+                <a class="btn btn-outline-light btn-lg px-4" href="#contact"
+                  >Reserve a table</a
+                >
+              </div>
+
+              <div class="row row-cols-1 row-cols-md-3 g-3">
+                <div class="col">
+                  <div
+                    class="h-100 p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-25"
+                  >
+                    <i
+                      class="bi bi-geo-alt fs-3 text-caramel"
+                      aria-hidden="true"
+                    ></i>
+                    <h3 class="h6 fw-bold mt-2 mb-1">Address</h3>
+                    <p class="small opacity-75 mb-0">
+                      Koffiestraat 12<br />9000 Gent
                     </p>
                   </div>
-                  <div class="row d-flex align-items-center">
-                    <div class="col-2">
-                      <span class="icon-circle d-flex">
-                        <p class="fw-bolder text-end">SV</p>
-                      </span>
-                    </div>
-                    <div class="col-10">
-                      <p class="fw-bold mb-0">Sofie V.</p>
-                      <p class="mb-0">Regular since 2019</p>
-                    </div>
+                </div>
+                <div class="col">
+                  <div
+                    class="h-100 p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-25"
+                  >
+                    <i
+                      class="bi bi-clock fs-3 text-caramel"
+                      aria-hidden="true"
+                    ></i>
+                    <h3 class="h6 fw-bold mt-2 mb-1">Opening hours</h3>
+                    <p class="small opacity-75 mb-0">
+                      Mon–Fri 7:30–18:00<br />Sat–Sun 9:00–17:00
+                    </p>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card bg-espresso">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                  </h5>
-                  <p class="card-text text-white">
-                    "Great place to study: fast Wi-Fi plenty of plugs and a
-                    cinnamon roll that is simply unbeatable."
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star text-warning"></i>
-                  </h5>
-                  <p class="card-text">
-                    "We ordered their beans for our office. Friendly advice and
-                    the coffee tastes as good as in the bar."
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="col">
+                  <div
+                    class="h-100 p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-25"
+                  >
+                    <i
+                      class="bi bi-wifi fs-3 text-caramel"
+                      aria-hidden="true"
+                    ></i>
+                    <h3 class="h6 fw-bold mt-2 mb-1">Free Wi-Fi</h3>
+                    <p class="small opacity-75 mb-0">
+                      Plenty of plugs,<br />perfect for studying
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <section id="contact" class="py-5 py-lg-6">
+        <div class="container">
+          <div class="row g-4 g-lg-5">
+            <div class="col-lg-5">
+              <p class="eyebrow">Contact</p>
+              <h2 class="display-5 fw-bold mb-0">
+                Questions, events or a big order?
+              </h2>
+              <p class="mt-3">
+                Send us a message and we will get back to you within one working
+                day.
+              </p>
+              <div class="d-flex align-items-center mb-3">
+                <span class="icon-circle">
+                  <i class="bi bi-telephone"></i>
+                </span>
+                <p class="mb-0 ms-3">+32 9 123 45 67</p>
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                <span class="icon-circle">
+                  <i class="bi bi-envelope"></i>
+                </span>
+                <p class="mb-0 ms-3">hello@roastandco.example</p>
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                <span class="icon-circle">
+                  <i class="bi bi-instagram"></i>
+                </span>
+                <p class="mb-0 ms-3">@roastandco</p>
+              </div>
+              <img
+                class="img-fluid rounded-4"
+                src="img/contact-terrace.jpg"
+                alt="terras"
+              />
+            </div>
+            <div class="col-lg-7">
+              <form>
+  <div class="row g-3 mb-3">
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="firstName" placeholder="First name">
+        <label for="firstName">First name</label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="lastName" placeholder="Last name">
+        <label for="lastName">Last name</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="email" placeholder="Email address">
+    <label for="email">Email address</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <select class="form-select" id="subject">
+      <option value="" selected>Choose a subject</option>
+      <option value="general">General question</option>
+      <option value="order">Order or beans</option>
+      <option value="event">Events &amp; bookings</option>
+      <option value="other">Other</option>
+    </select>
+    <label for="subject">Subject</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <textarea class="form-control" id="message" placeholder="Your message" style="height: 140px;"></textarea>
+    <label for="message">Your message</label>
+  </div>
+
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" id="newsletter">
+    <label class="form-check-label" for="newsletter">Keep me posted about new roasts</label>
+  </div>
+
+  <button type="submit" class="btn w-100 py-2 text-white" style="background-color: #8a5a2b;">
+    Send message <i class="bi bi-send ms-1"></i>
+  </button>
+</form>
+            </div>
+            
       </section>
     </main>
 
@@ -763,5 +946,9 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
